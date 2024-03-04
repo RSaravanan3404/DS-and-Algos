@@ -1,4 +1,4 @@
-from representation import ListNode
+from representation import ListNode, head
 
 
 class Solution:
@@ -20,3 +20,7 @@ class Solution:
         node.next = prev
 
         return node
+    
+
+obj  = Solution()
+Solution.reverseList(head)

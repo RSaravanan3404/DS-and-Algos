@@ -35,6 +35,6 @@ class ListNode:
         return tail.val
 
 
-linkked_list = ListNode()
-head = linkked_list.initial_creation(nums=list(map(int, input().split())))
+linked_list = ListNode()
+head = linked_list.initial_creation(nums=list(map(int, input().split())))
 

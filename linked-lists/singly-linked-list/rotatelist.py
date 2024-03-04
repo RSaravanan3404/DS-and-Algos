@@ -1,4 +1,4 @@
-from representation import ListNode
+from representation import ListNode, head
 
 
 class Solution:
@@ -24,3 +24,7 @@ class Solution:
         new_tail.next = None
 
         return new_head
+    
+
+obj  = Solution()
+Solution.rotateRight(head, int(input()))
