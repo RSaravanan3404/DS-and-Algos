@@ -1,4 +1,8 @@
-from binary_tree import TreeNode, create_tree
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
 
 class Solution:
@@ -25,6 +29,3 @@ class Solution:
         return left + bottom + right[::-1]
     
 
-tree = create_tree()
-solution = Solution()
-print(solution.boundaries(tree))

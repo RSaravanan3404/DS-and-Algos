@@ -1,4 +1,9 @@
-from trees.binarytree import TreeNode, create_tree
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
@@ -27,7 +32,3 @@ class Solution:
         return True
     
 
-tree1 = create_tree()
-tree2 = create_tree()
-solution = Solution()
-print(solution.isSameTree(tree1, tree2))

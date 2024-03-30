@@ -1,4 +1,8 @@
-from binary_tree import TreeNode, create_tree
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
@@ -31,6 +35,3 @@ class Solution:
         return True
     
 
-tree = create_tree()
-solution = Solution()
-print(solution.isSymmetric(tree))
